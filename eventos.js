@@ -1,6 +1,7 @@
-const button = document.getElementById('button');
+function alerta_boton(){
+    alert("Hola! Soy el div");
+}
 
-// Agrega un manejador de eventos para el click en el botón
-button.addEventListener("click", function() {
-    alert('¡Hola! Has hecho clic en el botón.');
-});
+let div = document.getElementById("div");
+div.addEventListener("click", alert("Hola! Soy el div"));
+  p.onclick = alerta_boton; 
