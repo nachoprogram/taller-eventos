@@ -1,7 +1,11 @@
-function alerta_boton(){
-    alert("Hola! Soy el div");
-}
+const div = document.getElementById("diverde");
 
-let div = document.getElementById("div");
-div.addEventListener("click", alert("Hola! Soy el div"));
-  p.onclick = alerta_boton; 
+div.addEventListener("click", () => {
+  alert("Hola! Soy el div");
+});
+
+const button = document.getElementById("button");
+button.addEventListener("click", (evento) => {
+    evento.stopPropagation();
+    alert("Hola!");
+  });
